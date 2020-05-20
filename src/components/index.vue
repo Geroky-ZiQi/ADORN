@@ -1,0 +1,1093 @@
+<template>
+  <div> 
+  	<div class="wrapper hp_1">
+  
+  		<header>
+  			<div class="top_bar">
+  				<div class="container">
+  					<div class="top_header_content">
+  						<div class="menu_logo">
+  							<a href="#" title="" class="menu">
+  								<i class="icon-menu"></i>
+  							</a>
+  							<a href="index.html" title="" class="logo">
+  								<img src="../assets/images/logo.png" alt="">
+                </a>
+  						</div><!--menu_logo end-->
+  						<div class="search_form">
+  							<form>
+  								<input type="text" name="search" placeholder="寻找你想要的美妆资讯">
+  								<button type="submit">
+  									<i class="icon-search"></i>
+  								</button>
+  							</form>
+  						</div><!--search_form end-->
+  						<ul class="controls-lv">
+  							<li>
+  								<a href="#" title=""><i class="icon-message"></i></a>
+  							</li>
+  							<li>
+  								<a href="#" title=""><i class="icon-notification"></i></a>
+  							</li>
+  							<li class="user-log">
+  								<div class="user-ac-img">
+  									<img src="../assets/images/resources/user-img.png" alt="">
+  								</div>
+  								<div class="account-menu">
+  									<h4>AZYRUSMAX <span class="usr-status">PRO</span></h4>
+  									<div class="sd_menu">
+  										<ul class="mm_menu">
+  											<li>
+  												<span>
+  													<i class="icon-user"></i>
+  												</span>
+  												<a href="#" title="">我的笔记</a>
+  											</li>
+  											<li>
+  												<span>
+  													<i class="icon-paid_sub"></i>
+  												</span>
+  												<a href="#" title="">已购买的笔记</a>
+  											</li>
+  											<li>
+  												<span>
+  													<i class="icon-settings"></i>
+  												</span>
+  												<a href="#" title="">设置</a>
+  											</li>
+  											<li>
+  												<span>
+  													<i class="icon-logout"></i>
+  												</span>
+  												<a href="#" title="">退出</a>
+  											</li>
+  										</ul>
+  									</div><!--sd_menu end-->
+  									<div class="sd_menu scnd">
+  										<ul class="mm_menu">
+  											<li>
+  												<span>
+  													<i class="icon-light"></i>
+  												</span>
+  												<a href="#" title="">暗黑模式</a>
+  												<label class="switch">
+  													<input type="checkbox">
+  												  	<b class="slider round"></b>
+  												</label>
+  											</li>
+  											<li>
+  												<span>
+  													<i class="icon-language"></i>
+  												</span>
+  												<a href="#" title="">语言</a>
+  											</li>
+  											<li>
+  												<span>
+  													<i class="icon-feedback"></i>
+  												</span>
+  												<a href="#" title="">反馈</a>
+  											</li>
+  											<li>
+  												<span>
+  													<i class="icon-location"></i>
+  												</span>
+  												<a href="#" title="">中国</a>
+  												<i class="icon-arrow_below"></i>
+  											</li>
+  										</ul>
+  									</div><!--sd_menu end-->
+  									<div class="restricted-mode">
+  										<h4>限制模式</h4>
+  										<label class="switch">
+  											<input type="checkbox" checked>
+  										  	<span class="slider round"></span>
+  										</label>
+  										<div class="clearfix"></div>
+  									</div><!--restricted-more end-->
+  								</div>
+  							</li>
+  							<router-link :to="{name: 'usercenter_note'}" tag="li" exact>
+  							  <a title="" class="btn-default">点击分享你的笔记</a>
+  							</router-link>
+  						</ul><!--controls-lv end-->
+  						<div class="clearfix"></div>
+  					</div><!--top_header_content end-->
+  				</div>
+  			</div><!--header_content end-->
+  			<div class="btm_bar">
+  				<div class="container">
+  					<div class="btm_bar_content">
+  						<nav>
+  							<ul>
+  								<li><a href="#" title=""> MY 我的  </a>
+  									<div class="mega-menu">
+  										<ul>
+  											<li><a href="index.html" title="">我的主页</a></li>
+  											<li><a href="Upload_Video.html" title="">上传笔记</a></li>
+  											<li><a href="Searched_Videos_Page.html" title="">搜索</a></li>
+  										</ul>
+  										<ul>
+  
+  											<li><a href="History_Page.html" title="">历史记录</a></li>
+  											<li><a href="Updates_From_Subs.html" title="">订阅</a></li>
+  											<li><a href="login.html" title="">登录</a></li>
+  											<li><a href="signup.html" title="">注册</a></li>
+  											<li><a href="User_Account_Page.html" title="">用户账户</a></li>
+  										</ul>
+  									</div>
+  									<div class="clearfix"></div>
+  								</li>
+  								<router-link :to="{name: 'usercenter_categories'}" tag="li" exact>
+  								  <a title="">分类</a>
+  								</router-link>
+  								<li><a href="Browse_Channels.html" title=""> TRENDING 潮流趋势</a></li>
+  							</ul>
+  						</nav><!--navigation end-->
+  						<ul class="shr_links">
+  							<li>
+  								<h3>Go to : </h3>
+  							</li>
+  							<li>
+  								<button data-toggle="tooltip" data-placement="top" title="喜欢">
+  								  <i class="icon-like"></i>
+  								</button>
+  							</li>
+  							<li>
+  								<button data-toggle="tooltip" data-placement="top" title="稍后浏览">
+  								  <i class="icon-watch_later"></i>
+  								</button>
+  							</li>
+  							<li>
+  								<button data-toggle="tooltip" data-placement="top" title="正在浏览">
+  								  <i class="icon-playlist"></i>
+  								</button>
+  							</li>
+  							<li>
+  								<button data-toggle="tooltip" data-placement="top" title="历史">
+  								  <i class="icon-history"></i>
+  								</button>
+  							</li>
+  						</ul><!--shr_links end-->
+  						<ul class="vid_thums">
+  							<li>
+  								<a class="active" href="#" title=""><i class="icon-grid"></i></a>
+  							</li>
+  							<li>
+  								<a href="#" title="">
+  									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  										 viewBox="0 0 108 108" xml:space="preserve">
+  										<rect width="63" height="45"/>
+  										<rect x="81" width="27" height="45"/>
+  										<rect x="45" y="63" width="63" height="45"/>
+  										<rect y="63" width="27" height="45"/>
+  									</svg>
+  								</a>
+  							</li>
+  						</ul><!--vid_status end-->
+  						<div class="clearfix"></div>
+  					</div><!--btm_bar_content end-->
+  				</div>
+  			</div><!--btm_bar end-->
+  		</header><!--header end-->
+  
+  		<div class="side_menu">
+  			<div class="form_dvv">
+  				<a href="#" title="" class="login_form_show">Sign in</a>
+  			</div>
+  			<div class="sd_menu">
+  				<ul class="mm_menu">
+  					<li>
+  						<span>
+  							<i class="icon-home"></i>
+  						</span>
+  						<a href="#" title="">主页</a>
+  					</li>
+  					<li>
+  						<span>
+  							<i class="icon-fire"></i>
+  						</span>
+  						<a href="#" title="">趋势</a>
+  					</li>
+  					<li>
+  						<span>
+  							<i class="icon-subscriptions"></i>
+  						</span>
+  						<a href="#" title="">订阅</a>
+  					</li>
+  				</ul>
+  			</div><!--sd_menu end-->
+  			<div class="sd_menu">
+  				<h3>浏览</h3>
+  				<ul class="mm_menu">
+  					<li>
+  						<span>
+  							<i class="icon-history"></i>
+  						</span>
+  						<a href="#" title="">历史</a>
+  					</li>
+  					<li>
+  						<span>
+  							<i class="icon-watch_later"></i>
+  						</span>
+  						<a href="#" title="">稍后浏览</a>
+  					</li>
+  					<li>
+  						<span>
+  							<i class="icon-like"></i>
+  						</span>
+  						<a href="#" title="">喜欢</a>
+  					</li>
+  					<li>
+  						<span>
+  							<i class="icon-play_list"></i>
+  						</span>
+  						<a href="#" title="">浏览清单</a>
+  					</li>
+  				</ul>
+  			</div><!--sd_menu end-->
+  			<div class="sd_menu subs_lst">
+  				<h3>订阅</h3>
+  				<ul class="mm_menu">
+  					<li>
+  						<span class="usr_name">
+  							<img src="../assets/images/resources/th1.png" alt="">
+  						</span>
+  						<a href="#" title="">敏感肌专栏</a>
+  						<small>3</small>
+  					</li>
+  					<li>
+  						<span class="usr_name">
+  							<img src="../assets/images/resources/th2.png" alt="">
+  						</span>
+  						<a href="#" title="">油皮福音</a>
+  						<small>6</small>
+  					</li>
+  					<li>
+  						<span class="usr_name">
+  							<img src="../assets/images/resources/th3.png" alt="">
+  						</span>
+  						<a href="#" title="">粉底精选</a>
+  						<small>2</small>
+  					</li>
+  					<li>
+  						<span class="usr_name">
+  							<img src="../assets/images/resources/th4.png" alt="">
+  						</span>
+  						<a href="#" title="">显白口红色号</a>
+  						<small>11</small>
+  					</li>
+  					<li>
+  						<span class="usr_name">
+  							<img src="../assets/images/resources/th5.png" alt="">
+  						</span>
+  						<a href="#" title="">美白专栏</a>
+  						<small>3</small>
+  					</li>
+  					<li>
+  						<span class="usr_name">
+  							<img src="../assets/images/resources/sn.png" alt="">
+  						</span>
+  						<a href="#" title="">测评日记</a>
+  						<small>20</small>
+  					</li>
+  				</ul>
+  				<a href="#" title="" class="more-ch"><i class="icon-arrow_below"></i> Show 14 more</a>
+  			</div><!--sd_menu end-->
+  			<div class="sd_menu">
+  				<ul class="mm_menu">
+  					<li>
+  
+  						<span>
+  							<i class="icon-settings"></i>
+  						</span>
+  						<a href="#" title="">设置</a>
+  					</li>
+  					<li>
+  						<span>
+  							<i class="icon-logout"></i>
+  						</span>
+  						<a href="#" title="">退出</a>
+  					</li>
+  				</ul>
+  			</div><!--sd_menu end-->
+  			<div class="sd_menu m_linkz">
+  				<ul class="mm_menu">
+  					<li><a href="#">关于</a></li>
+  					<li><a href="#">社区规则 </a></li>
+  					<li><a href="#">隐私</a></li>
+  					<li><a href="#">条款</a></li>
+  					<li><a href="#">博客</a></li>
+  					<li><a href="#">合约 </a></li>
+  					<li><a href="#">捐赠</a></li>
+  					<li><a href="#">常见问题</a></li>
+  				</ul>
+  				<span>请联系 张子祺：18890049703</span>
+  			</div><!--sd_menu end-->
+  			<div class="dd_menu"></div>
+  		</div><!--side_menu end-->
+  
+  		<section class="banner-section">
+  			<div class="container">
+  				<div class="banner-text">
+  					<h2>分享你的美丽心得</h2>
+  					<a href="#" title="">点击左上角" MY 我的 "注册账户</a>
+  				</div><!--banner-text end-->
+  				<h3 class="headline">今日分享来自 <a href="#" title="">Geroky张子祺</a></h3>
+  			</div>
+  		</section><!--banner-section end-->
+  
+  		<section class="services-sec">
+  			<div class="container">
+  				<div class="services-row">
+  					<div class="row">
+  						<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+  							<div class="service-col">
+  								<img src="../assets/images/sv1.png" alt="">
+  								<h3>粉丝打赏</h3>
+  								<p>通过视频和测评笔记得到粉丝的打赏</p>
+  							</div><!--service-col end-->
+  						</div>
+  						<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+  							<div class="service-col">
+  								<img src="../assets/images/sv2.png" alt="">
+  								<h3>涨  粉</h3>
+  								<p>加入各类社区一起讨论 & 互相关注一起变美 </p>
+  							</div><!--service-col end-->
+  						</div>
+  						<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+  							<div class="service-col">
+  								<img src="../assets/images/sv3.png" alt="">
+  								<h3>轻松下载视频，随时随地学习</h3>
+  								<p>通过查找博主名字和关键字查找你喜欢的视频</p>
+  							</div><!--service-col end-->
+  						</div>
+  						<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+  							<div class="service-col">
+  								<img src="../assets/images/sv4.png" alt="">
+  								<h3>打赏你喜欢的博主 </h3>
+  								<p>让你喜欢的博主有更新的动力！</p>
+  							</div><!--service-col end-->
+  						</div>
+  					</div>
+  				</div><!--services-row end-->
+  			</div>
+  		</section><!--services-sec end-->
+  
+  		<section class="vds-main">
+  			<div class="vidz-row">
+  				<div class="container">
+  					<div class="vidz_sec">
+  						<h3>热门测评</h3>
+  						<div class="vidz_list">
+  							<div class="row">
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide1.png" alt="">
+  												<span class="vid-time">10:21</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">欧美森系妆容：放大双眼</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">热爱欧美妆的王丽春</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+  											<span>686K 浏览<small class="posted_dt">1周前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide2.png" alt="">
+  												<span class="vid-time">13:49</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">纪梵希春季限定眼影盘测评</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">JENNIE</a> </h4>
+  											<span>283K 浏览<small class="posted_dt">3 个月前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide3.png" alt="">
+  												<span class="vid-time">2:54</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">美妆博主都用什么相机？快来看！</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">Lisa</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+  											<span>2.6M views .<small class="posted_dt">2 个月前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide4.png" alt="">
+  												<span class="vid-time">5:25</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">印度妆容席卷潮流？</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">辛芷蕾</a> </h4>
+  											<span>612K 次观看 .<small class="posted_dt">5 个月前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide5.png" alt="">
+  												<span class="vid-time">4:01</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">阿玛尼新潮来袭</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">张子祺</a> </h4>
+  											<span>45K 次观看<small class="posted_dt">3 天前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide6.png" alt="">
+  												<span class="vid-time">6:20</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">实用美妆小技巧</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title=""></a> 王铮</h4>
+  											<span>86K 次观看<small class="posted_dt">6 天前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide7.png" alt="">
+  												<span class="vid-time">8:16</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">疫情宅家：跟我一起做健身操--甩掉赘肉</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">累死人的美丽芭蕾</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+  											<span>144K 次观看<small class="posted_dt">6 天前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide8.png" alt="">
+  												<span class="vid-time">29:32</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">圣诞妆容大改造</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">Jennie</a></h4>
+  											<span>408K 次观看<small class="posted_dt">19 小时前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  							</div>
+  						</div><!--vidz_list end-->
+  					</div><!--vidz_videos end-->
+  				</div>
+  			</div><!--vidz-row end-->
+  			<div class="vidz-row">
+  				<div class="container">
+  					<div class="vidz_sec">
+  						<h3>订阅更新</h3>
+  						<a href="#" title="" class="view-btn">View all</a>
+  						<div class="vidz_list">
+  							<div class="row">
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vcp_inf">
+  											<div class="vc_hd">
+  												<img src="../assets/images/resources/th1.png" alt="">
+  											</div>
+  											<div class="vc_info">
+  												<h4><a href="Single_Channel_Home.html" title="">美妆教程</a></h4>
+  											</div>
+  											<span class="vc-count">3</span>
+  										</div>
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide9.png" alt="">
+  												<span class="vid-time">4:01</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title=""> 异域风情妆容</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">jennie</a> </h4>
+  											<span>45K 次观看<small class="posted_dt">3 天前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vcp_inf">
+  											<div class="vc_hd">
+  												<img src="../assets/images/resources/th2.png" alt="">
+  											</div>
+  											<div class="vc_info">
+  												<h4><a href="Single_Channel_Home.html" title="">健身塑型</a></h4>
+  											</div>
+  											<span class="vc-count">6</span>
+  										</div>
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide10.png" alt="">
+  												<span class="vid-time">6:20</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">健身教程：跑步该注意什么</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">MathChief</a> </h4>
+  											<span>86K 次浏览<small class="posted_dt">6小时前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vcp_inf">
+  											<div class="vc_hd">
+  												<img src="../assets/images/resources/th3.png" alt="">
+  											</div>
+  											<div class="vc_info">
+  												<h4><a href="Single_Channel_Home.html" title="">美容</a></h4>
+  											</div>
+  											<span class="vc-count">2</span>
+  										</div>
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide11.png" alt="">
+  												<span class="vid-time">8:16</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">生气使皮肤暗黄 加速老化？ </a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">潘潘</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+  											<span>144K 次观看<small class="posted_dt">6 days ago</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vcp_inf">
+  											<div class="vc_hd">
+  												<img src="../assets/images/resources/th4.png" alt="">
+  											</div>
+  											<div class="vc_info">
+  												<h4><a href="Single_Channel_Home.html" title="">美体</a></h4>
+  											</div>
+  											<span class="vc-count">7</span>
+  										</div>
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide12.png" alt="">
+  												<span class="vid-time">29:32</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">健美操：匀称身形</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">Loskes</a> </h4>
+  											<span>408K 次观看<small class="posted_dt">19 小时前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  							</div>
+  						</div><!--vidz_list end-->
+  					</div><!--vidz_videos end-->
+  				</div>
+  			</div><!--vidz-row end-->
+  			<div class="vidz-row">
+  				<div class="container">
+  					<div class="vidz_sec">
+  						<h3>发现新鲜事</h3>
+  						<div class="vidz_list">
+  							<div class="row">
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide13.png" alt="">
+  												<span class="vid-time">10:21</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">娇兰全线测评：哪一款是你的菜？</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">张子祺</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+  											<span>686K 次观看<small class="posted_dt">1 周前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide14.png" alt="">
+  												<span class="vid-time">13:49</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">都市丽人妆发大改造</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">Eros </a> </h4>
+  											<span>283K 次观看<small class="posted_dt">3 个月前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide15.png" alt="">
+  												<span class="vid-time">2:54</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">安吉丽娜朱莉最爱香水？看看是不是你的菜</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">GEROKY</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+  											<span>2.6M 次观看<small class="posted_dt">2 个月前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide16.png" alt="">
+  												<span class="vid-time">5:25</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">夏日清新装扮</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">Maketzi</a> </h4>
+  											<span>612K views .<small class="posted_dt">5 个月前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide17.png" alt="">
+  												<span class="vid-time">4:01</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">旅行美照打卡圣地</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">爱旅行的小猫咪</a> </h4>
+  											<span>45K 次观看<small class="posted_dt">3 天前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide18.png" alt="">
+  												<span class="vid-time">6:20</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">来看看旅行穿搭</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">Chief</a> </h4>
+  											<span>86K 次观看<small class="posted_dt">6 天前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide19.png" alt="">
+  												<span class="vid-time">8:16</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">谁说做了妈妈不能再打扮</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">孕妈爱化妆</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+  											<span>144K 次观看<small class="posted_dt">6 天前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide20.png" alt="">
+  												<span class="vid-time">29:32</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title=""> Burberry口红全线测评</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">Loskes</a></h4>
+  											<span>408K 次观看<small class="posted_dt">19 小时前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  							</div>
+  						</div><!--vidz_list end-->
+  					</div><!--vidz_videos end-->
+  				</div>
+  			</div><!--vidz-row end-->
+  			<div class="vidz-row">
+  				<div class="container">
+  					<div class="vidz_sec">
+  						<h3>热门视频</h3>
+  						<div class="vidz_list">
+  							<div class="row">
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide1.png" alt="">
+  												<span class="vid-time">10:21</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">欧美森系妆容</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">爱化妆的春春</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+  											<span>686K 次观看<small class="posted_dt">1 周前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide2.png" alt="">
+  												<span class="vid-time">13:49</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">眼影测评——哪款才是你的菜</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">Eros </a> </h4>
+  											<span>283K 次观看<small class="posted_dt">3个月前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide3.png" alt="">
+  												<span class="vid-time">2:54</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">美妆博主爱用相机大揭秘</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">蕾蕾</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+  											<span>2.6M 次观看<small class="posted_dt">2 个月前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide4.png" alt="">
+  												<span class="vid-time">5:25</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">异域风情眼妆</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">Maketzi</a> </h4>
+  											<span>612K 次观看<small class="posted_dt">5 个月前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide5.png" alt="">
+  												<span class="vid-time">4:01</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">阿玛尼挚爱测评日记</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">ScereBro</a> </h4>
+  											<span>45K 次观看<small class="posted_dt">3 天前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide6.png" alt="">
+  												<span class="vid-time">6:20</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">实用美妆小技巧</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">王chiken</a> </h4>
+  											<span>86K 次观看<small class="posted_dt">6 天前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide7.png" alt="">
+  												<span class="vid-time">8:16</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">疫情宅家也要变瘦 </a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">RealLifeLore</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+  											<span>144K 次观看<small class="posted_dt">6 天前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="single_video_playlist.html" title="">
+  												<img src="../assets/images/resources/vide8.png" alt="">
+  												<span class="vid-time">29:32</span>
+  												<span class="watch_later">
+  													<i class="icon-watch_later_fill"></i>
+  												</span>
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="single_video_playlist.html" title="">圣诞妆容分享</a></h3>
+  											<h4><a href="Single_Channel_Home.html" title="">Loskes</a></h4>
+  											<span>408K 次观看<small class="posted_dt">19 天前</small></span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  							</div>
+  						</div><!--vidz_list end-->
+  					</div><!--vidz_videos end-->
+  				</div>
+  			</div><!--vidz-row end-->
+  			<div class="vidz-row pop_channels">
+  				<div class="container">
+  					<div class="vidz_sec">
+  						<h3>热门频道</h3>
+  						<div class="vidz_list">
+  							<div class="row">
+  								<div class="col-lg-2 col-md-4 col-sm-4 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="Single_Channel_Home.html" title="">
+  												<img src="../assets/images/resources/ch1.jpg" alt="">
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="Single_Channel_Home.html" title="">减脂健身</a></h3>
+  											<span>230K 粉丝</span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-2 col-md-4 col-sm-4 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="Single_Channel_Home.html" title="">
+  												<img src="../assets/images/resources/ch2.jpg" alt="">
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="Single_Channel_Home.html" title="">化妆</a></h3>
+  											<span>191K粉丝</span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-2 col-md-4 col-sm-4 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="Single_Channel_Home.html" title="">
+  												<img src="../assets/images/resources/ch3.jpg" alt="">
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="Single_Channel_Home.html" title="">美拍</a> <span class="verify_ic"><i class="icon-tick"></i></span></h3>
+  											<span>12M 粉丝</span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-2 col-md-4 col-sm-4 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="Single_Channel_Home.html" title="">
+  												<img src="../assets/images/resources/ch4.jpg" alt="">
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="Single_Channel_Home.html" title="">Official BAEUTY </a> <span class="verify_ic"><i class="icon-tick"></i></span></h3>
+  											<span>48M 粉丝</span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-2 col-md-4 col-sm-4 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="Single_Channel_Home.html" title="">
+  												<img src="../assets/images/resources/ch5.jpg" alt="">
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="Single_Channel_Home.html" title="">日常分享</a></h3>
+  											<span>954K 粉丝</span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  								<div class="col-lg-2 col-md-4 col-sm-4 col-6 full_wdth">
+  									<div class="videoo">
+  										<div class="vid_thumbainl">
+  											<a href="Single_Channel_Home.html" title="">
+  												<img src="../assets/images/resources/ch6.jpg" alt="">
+  											</a>	
+  										</div><!--vid_thumbnail end-->
+  										<div class="video_info">
+  											<h3><a href="Single_Channel_Home.html" title="">色彩搭配</a></h3>
+  											<span>1.3M 粉丝</span>
+  										</div>
+  									</div><!--videoo end-->
+  								</div>
+  							</div>
+  						</div><!--vidz_list end-->
+  					</div><!--vidz_videos end-->
+  				</div>
+  			</div><!--vidz-row end-->
+  		</section><!--vds-main end-->
+  
+  		<section class="more_items_sec text-center">
+  			<div class="container">
+  				<a href="#" title="">
+  					<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  						<path d="M18.1618 24.0001H0.838235C0.374412 24.0001 0 23.6261 0 23.1628V5.86052C0 5.39727 0.374412 5.02332 0.838235 5.02332H18.1618C18.6256 5.02332 19 5.39727 19 5.86052V23.1628C19 23.6261 18.6256 24.0001 18.1618 24.0001ZM1.67647 22.3256H17.3235V6.69773H1.67647V22.3256Z" fill="#9494A0"/>
+  						<g opacity="0.25">
+  						<path opacity="0.25" d="M13.1324 4.18605C12.6685 4.18605 12.2941 3.81209 12.2941 3.34884V1.67442H6.70589V3.34884C6.70589 3.81209 6.33148 4.18605 5.86765 4.18605C5.40383 4.18605 5.02942 3.81209 5.02942 3.34884V0.83721C5.02942 0.373954 5.40383 0 5.86765 0H13.1324C13.5962 0 13.9706 0.373954 13.9706 0.83721V3.34884C13.9706 3.81209 13.5962 4.18605 13.1324 4.18605Z" fill="#9494A0"/>
+  						</g>
+  						<path d="M9.50001 19.3479C9.28487 19.3479 9.06972 19.267 8.90766 19.1024L5.92634 16.1275C5.59942 15.801 5.59942 15.2707 5.92634 14.9442C6.25325 14.6177 6.78413 14.6177 7.11104 14.9442L9.50001 17.3275L11.8862 14.9442C12.2131 14.6177 12.744 14.6177 13.0709 14.9442C13.3978 15.2707 13.3978 15.801 13.0709 16.1275L10.0924 19.1024C9.93031 19.267 9.71516 19.3479 9.50001 19.3479Z" fill="#9494A0"/>
+  						<path d="M9.49999 18.4186C9.03617 18.4186 8.66176 18.0447 8.66176 17.5814V10.3256C8.66176 9.86236 9.03617 9.4884 9.49999 9.4884C9.96382 9.4884 10.3382 9.86236 10.3382 10.3256V17.5814C10.3382 18.0447 9.96382 18.4186 9.49999 18.4186Z" fill="#9494A0"/>
+  						<g opacity="0.5">
+  						<path opacity="0.5" d="M15.6471 6.69764C15.1832 6.69764 14.8088 6.32369 14.8088 5.86043V4.18601H4.19118V5.86043C4.19118 6.32369 3.81677 6.69764 3.35294 6.69764C2.88912 6.69764 2.51471 6.32369 2.51471 5.86043V3.34881C2.51471 2.88555 2.88912 2.5116 3.35294 2.5116H15.6471C16.1109 2.5116 16.4853 2.88555 16.4853 3.34881V5.86043C16.4853 6.32369 16.1109 6.69764 15.6471 6.69764Z" fill="#9494A0"/>
+  						</g>
+  					</svg>
+  				</a>
+  			</div>
+  		</section><!--more_items_sec end-->
+  
+  	</div><!--wrapper end-->
+    
+    
+    
+    
+  </div>
+  
+</template>
+
+<script>
+</script>
+
+<style>
+  /*导入当前页面需要的css文件*/
+  @import url("../assets/css/animate.css");
+  @import url("../assets/css/bootstrap.min.css");
+  @import url("../assets/css/fontello.css");
+  @import url("../assets/css/fontello-codes.css");
+  @import url("../assets/css/style.css");
+  @import url("../assets/css/responsive.css");
+  @import url("../assets/css/color.css");
+ 
+</style>
